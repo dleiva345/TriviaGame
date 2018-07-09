@@ -1,51 +1,50 @@
-
-
 <!DOCTYPE html>
 
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Trivia Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en-us">
 
+  <head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    
+    <meta charset="UTF-8">
+    <title>Trivia</title>
 
-</head>
-<body>
+    <!-- CSS Reset Sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 
-    
-        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-                <div class="w3-display-middle" style="white-space:nowrap;">
-                    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
-                    <button class ="btn btn-success" id ="start"><span class="w3-hide-small"></span> START GAME</span></button>   
+    <!-- Out Own CSS Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Matetialize CDN -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+        <div class="container">
+                <div class="row valign-wrapper" id="trivia-area">
+                  <div class= "col s6 offset-s3 valign">
+                    <div class="card blue-grey darken-1">
+                     <div class="card-image">
+                            <img src="assets/images/friends.png">
+                     </div>       
+                      <div class="card-content white-text">
+                        <h3>Welcome</h3>  
+                        <p>You will be asked a series of trivia game questions, you have 30 seconds to answer them. Good Luck!</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#" id="start">START GAME</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
         
-
-    <div class="wrapper">
-        <h1>Trivia Quiz</h1>  
-
-        <div id= "timeRemaining"></div>
-        <div id= "questions"></div>
-        <div id= "answers"></div>
-        
-
-        
-
-    </div>
-
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Script -->
-<script type="text/javascript" src="assets/js/app.js"></script>
-
-</body>
+            <script src="assets/js/app.js "></script>
+     
+    </body>
 </html>
